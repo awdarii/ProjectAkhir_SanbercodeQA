@@ -1,0 +1,5 @@
+{
+  "employees": ["Linda", "John Smith", "Paul Collings"],
+  "jobTitles": ["IT Manager", "QA Engineer", "HR Manager"],
+  "location": ["Texas R&D", "Jakarta", "Bandung"]
+}

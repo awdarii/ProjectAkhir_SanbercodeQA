@@ -1,0 +1,58 @@
+[
+  {
+    "case": "1. Valid username dan Valid password",
+    "username": "Admin",
+    "password": "admin123",
+    "expectedUrl": "/dashboard",
+    "expectedMessage": ""
+  },
+  {
+    "case": "2. Invalid username dan valid password",
+    "username": "Adminn",
+    "password": "admin123",
+    "expectedUrl": "/auth/login",
+    "expectedMessage": "Invalid credentials"
+  },
+  {
+    "case": "3. Valid username dan Invalid password",
+    "username": "Admin",
+    "password": "admin1234",
+    "expectedUrl": "/auth/login",
+    "expectedMessage": "Invalid credentials"
+  },
+  {
+    "case": "4. Invalid username dan Invalid password",
+    "username": "Adminn",
+    "password": "admin1234",
+    "expectedUrl": "/auth/login",
+    "expectedMessage": "Invalid credentials"
+  },
+  {
+    "case": "5. Empty username",
+    "username": "",
+    "password": "admin123",
+    "expectedUrl": "/auth/login",
+    "expectedMessage": "Required"
+  },
+  {
+    "case": "6. Empty password",
+    "username": "Admin",
+    "password": "",
+    "expectedUrl": "/auth/login",
+    "expectedMessage": "Required"
+  },
+  {
+    "case": "7. Empty username dan empty password",
+    "username": "",
+    "password": "",
+    "expectedUrl": "/auth/login",
+    "expectedMessage": "Required"
+  },
+  {
+    "case": "8. Space in front of the username",
+    "username": " Admin",
+    "password": "",
+    "expectedUrl": "/auth/login",
+    "expectedMessage": "Required"
+  }
+]
